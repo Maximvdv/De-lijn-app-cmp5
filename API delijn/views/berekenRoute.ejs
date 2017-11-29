@@ -1,0 +1,24 @@
+<h1>Bereken uw route</h1>
+
+<form method="post" action="/berekenRoute">
+
+    <input type="text" name="startpunt" value="">
+    <input type="text" name="eindpunt" value="">
+    <input type="date" name="datum" value="">
+    <input type="time" name="tijdstip" value="">
+    <input type="radio" name="vertrekkenaankomen" value="1"> vertrekken
+    <input type="radio" name="vertrekkenaankomen" value="2"> aankomen
+    <input type="checkbox" name="bus" value=""> met de bus <br>
+    <input type="checkbox" name="tram" value=""> met de tram <br>
+    <input type="checkbox" name="metro" value=""> met de metro <br>
+    <input type="checkbox" name="trein" value=""> met de trein <br>
+    <input type="checkbox" name="belbus" value=""> met de belbus <br>
+
+
+    <input type="submit" value="Bereken route">
+
+
+
+</form>
+
+<%- berekenRouteDisplay %>

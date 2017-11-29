@@ -6,9 +6,45 @@
 </form>
 
 
+<h1>zoek info over uw halte</h1>
+
+<form method="post" action="/halteinformatie">
+  <input type="text" name="halteinfo" value="">
+  <input type="submit" value="zoek halteinfo">
+</form>
+
+
 <h1>zoek lijnen in uw gemeente of stad</h1>
 
 <form method="post" action="/gemeentelijnen">
   <input type="number" name="lijnnummer" value="">
   <input type="submit" value="zoek lijnnummer">
+</form>
+
+
+<p>__________________________________________________________________________________________</p>
+
+<h1>Bereken uw route</h1>
+
+<form method="post" action="/berekenRoute">
+
+  <input type="text" name="startpunt" value="">
+  <input type="text" name="eindpunt" value="">
+  <input type="date" name="datum" value="">
+  <input type="time" name="tijdstip" value=""><br><br>
+
+  <input type="radio" name="vertrekkenaankomen" value="1"> vertrekken
+  <input type="radio" name="vertrekkenaankomen" value="2"> aankomen<br><br>
+
+  <input type="checkbox" name="bus" value=""> met de bus <br>
+  <input type="checkbox" name="tram" value=""> met de tram <br>
+  <input type="checkbox" name="metro" value=""> met de metro <br>
+  <input type="checkbox" name="trein" value=""> met de trein <br>
+  <input type="checkbox" name="belbus" value=""> met de belbus <br> <br>
+
+
+  <input type="submit" value="Bereken route">
+
+
+
 </form>
