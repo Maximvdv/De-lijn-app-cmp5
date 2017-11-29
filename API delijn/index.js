@@ -124,7 +124,7 @@ app.post('/halteinformatie', function (req, res) {
 app.post('/berekenRoute', function (req, res) {
     // console.log(req.body.verkoopstad);
     var gegevens = ' ';
-    request('https://www.delijn.be/rise-api-core/reisadvies/routes/' + req.body.startpunt, req.body.eindpunt, req.body.datum, req.body.tijdstip, req.body.vertrekken, req.body.aankomen, req.body.bus, req.body.tram, req.body.metro, req.body.trein, req.body.belbus, function (error, response, body) {
+    request('https://www.delijn.be/rise-api-core/reisadvies/routes/' + req.body.startpunt + '/' + req.body.eindpunt /*+ '/' + req.body.startx + '/' + req.body.starty + '/' + req.body.endx + '/' + req.body.endy */ + '/' + req.body.datum + '/' + req.body.tijdstip + '/' + req.body.vertrekken + '/' + req.body.aankomen + '/' + req.body.bus + '/' + req.body.tram + '/' + req.body.metro + '/' + req.body.trein + '/' + req.body.belbus, function (error, response, body) {
         var data = JSON.parse(body);
         console.log(data);
 
