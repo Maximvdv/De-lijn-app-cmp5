@@ -1,0 +1,4 @@
+1. Nieuwe ejs opvangpagina maken
+2. Kopieren van vorige en aanpassen naar nieuwe variabelen
+3. index.js nieuwe app.post aanmaken
+4. a.variabelen aanpassen naar nieuwe data die binnenkomt in json (te bekijken in console van gitbash) 
