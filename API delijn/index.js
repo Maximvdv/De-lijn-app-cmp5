@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 });
 
 
-// verkooppunten test
+// verkooppunten *working*
 
 app.post('/verkooppunten', function (req, res) {
     // console.log(req.body.verkoopstad);
@@ -53,7 +53,7 @@ app.post('/verkooppunten', function (req, res) {
     });
 });
 
-// gemeentelijnen test (waar kom ik aan ID ? wat verwijst dit naar)
+// gemeentelijnen *working*
 
 app.post('/gemeentelijnen', function (req, res) {
     // console.log(req.body.lijnnummer);
@@ -88,7 +88,7 @@ app.post('/gemeentelijnen', function (req, res) {
     });
 });
 
-// (waar kom ik aan ID ? wat verwijst dit naar)
+// halteinformatie *not working*
 
 app.post('/halteinformatie', function (req, res) {
     // console.log(req.body.halteinfo);
@@ -121,10 +121,12 @@ app.post('/halteinformatie', function (req, res) {
     });
 });
 
+//berekenRoute *not working*
+
 app.post('/berekenRoute', function (req, res) {
     // console.log(req.body.verkoopstad);
     var gegevens = ' ';
-    request('https://www.delijn.be/rise-api-core/reisadvies/routes/' + req.body.startpunt + '/' + req.body.eindpunt /*+ '/' + req.body.startx + '/' + req.body.starty + '/' + req.body.endx + '/' + req.body.endy */ + '/' + req.body.datum + '/' + req.body.tijdstip + '/' + req.body.vertrekken + '/' + req.body.aankomen + '/' + req.body.bus + '/' + req.body.tram + '/' + req.body.metro + '/' + req.body.trein + '/' + req.body.belbus, function (error, response, body) {
+    request('https://www.delijn.be/rise-api-core/reisadvies/routes/' + req.body.startpunt + '/' + req.body.eindpunt + '/' + req.body.startx + '/' + req.body.starty + '/' + req.body.endx + '/' + req.body.endy  + '/' + req.body.datum + '/' + req.body.tijdstip + '/' + req.body.vertrekken + '/' + req.body.aankomen + '/' + req.body.bus + '/' + req.body.tram + '/' + req.body.metro + '/' + req.body.trein + '/' + req.body.belbus, function (error, response, body) {
         var data = JSON.parse(body);
         console.log(data);
 
@@ -141,7 +143,9 @@ app.post('/berekenRoute', function (req, res) {
             for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.reiswegen} </h2>
+            <h2> ${a.instructie} </h2>
+            <h2> ${a.start} </h2>
+            <h2> ${a.end} </h2>
             <hr>
           `;
             }
@@ -151,6 +155,11 @@ app.post('/berekenRoute', function (req, res) {
         });
     });
 });
+
+
+//coord convert
+// https://www.delijn.be/rise-api-core/locations/convert/{{lat}}/{{long}}
+// maps coordinaten vb. lat = 51.2189652 && long = 4.399964   --> groenplaats
 
 
 app.listen(8080);
