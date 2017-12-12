@@ -158,7 +158,7 @@ app.post('/berekenRoute', function (req, res) {
     });
 });
 
-//doorkomendeLijnen *working* 
+//doorkomendeLijnen *working*
 
 app.post('/doorkomendeLijnen', function (req, res) {
     // console.log(req.body.verkoopstad);
@@ -192,6 +192,46 @@ app.post('/doorkomendeLijnen', function (req, res) {
         });
     });
 });
+
+//vertrekkendeLijnen
+
+app.post('/vertrekkendeLijnen', function (req, res) {
+    // console.log(req.body.verkoopstad);
+    var gegevens = ' ';
+    request('https://www.delijn.be/rise-api-core/haltes/vertrekken/' + req.body.halteId + '/' + req.body.num_results, function (error, response, body) {
+        var data = JSON.parse(body);
+        console.log(data);
+
+        if (data === null) {
+            gegevens += `
+        <p> Er zijn geen vertekkende lijnen gevonden voor ${req.body.halteId}</p>
+        `;
+        }
+        else {
+
+            gegevens += `
+          <h2> Vertrekkende lijnen voor halte ${req.body.halteId}</h2>
+        `;
+            for (var i = 0; i < data.length; i++) {
+                var a = data[i];
+                gegevens += `
+            <h2> ${a.lijnen[{bestemming}]} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
+            <h3> Lijn ${a.lijnNummer} komt hier langs </h3>
+            <h5> Richting: ${a.lijnRichting} </h5>
+            <hr>
+          `;
+            }
+        }
+        res.render('vertrekkendeLijnen', {
+            vertrekkendeLijnenDisplay: `${gegevens}`,
+        });
+    });
+});
+
+
+
+
+
 
 
 //coord convert
