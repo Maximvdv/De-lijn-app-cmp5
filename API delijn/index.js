@@ -202,7 +202,7 @@ app.post('/doorkomendeLijnen', function (req, res) {
 app.post('/vertrekkendeLijnen', function (req, res) {
     // console.log(req.body.verkoopstad);
     var gegevens = ' ';
-    request('https://www.delijn.be/rise-api-core/haltes/vertrekken/' + req.body.halteId + '/' + req.body.num_results, function (error, response, body) {
+    request('https://www.delijn.be/rise-api-core/haltes/vertrekken/' + req.body.halteId + '/' + 5, function (error, response, body) {
         var data = JSON.parse(body);
         console.log(data);
 
