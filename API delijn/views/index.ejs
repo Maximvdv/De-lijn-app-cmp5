@@ -1,18 +1,25 @@
 <h1>zoek verkooppunten in uw gemeente van De Lijn</h1>
 
+<!--verkooppunten *working*-->
+
 <form method="post" action="/verkooppunten">
   <input type="text" name="verkoopstad" value="">
   <input type="submit" value="zoek verkooppunt">
 </form>
 
+<!--halteinformatie *not working*-->
 
-<!--<h1>zoek info over uw halte</h1>
+
+<h1>zoek info over uw halte</h1>
 
 <form method="post" action="/halteinformatie">
-  <input type="text" name="halteinfo" value="">
+  <input type="number" name="halteinfo" value="">
   <input type="submit" value="zoek halteinfo">
-</form>-->
+</form>
 
+<p>__________________________________________________________________________________________</p>
+
+<!--gemeentelijnen *working*-->
 
 <h1>zoek lijnen in uw gemeente of stad</h1>
 
@@ -24,23 +31,28 @@
 
 <p>__________________________________________________________________________________________</p>
 
+<!--
+Routeberekening *not working*
+
 <h1>Bereken uw route</h1>
 
 <form method="post" action="/berekenRoute">
 
-  <input type="text" name="startpunt" value="">
-  <input type="text" name="eindpunt" value="">
+  <input type="text" name="startpunt" value="sint-niklaas">
+  <input type="text" name="eindpunt" value="Elversele, Temse">
   <br>
-  <input type="number" name="startx" value="">
-  <input type="number" name="starty" value="">
-  <input type="number" name="endx" value="">
-  <input type="number" name="endy" value="">
+  <input type="number" name="startx" value="134103">
+  <input type="number" name="starty" value="206073">
+  <input type="number" name="endx" value="133774">
+  <input type="number" name="endy" value="200500">
   <br>
-  <input type="text" name="datum" value="">
-  <input type="text" name="tijdstip" value=""><br><br>
+  <input type="text" name="datum" value="11-12-2017">
+  <input type="text" name="tijdstip" value="20:00"><br><br>
 
-  <input type="radio" name="vertrekkenaankomen" value="1"> vertrekken
-  <input type="radio" name="vertrekkenaankomen" value="2"> aankomen<br><br>
+  <input type="number" name="vertrekkenaankomen" value="1"> vertrekken = 1 / aankomen = 2
+
+  <br><br>
+  &lt;!&ndash;<input type="number" name="vertrekkenaankomen" value="2"> aankomen<br><br>&ndash;&gt;
 
   <input type="text" name="bus" value="on"> met de bus <br>
   <input type="text" name="tram" value="on"> met de tram <br>
@@ -48,11 +60,20 @@
   <input type="text" name="trein" value="on"> met de trein <br>
   <input type="text" name="belbus" value="on"> met de belbus <br> <br>
 
-  <input type="text" name="language" value=""> Taal
+  <input type="hidden" name="language" value="nl">
 
 
   <input type="submit" value="Bereken route">
+</form>-->
 
 
+<!--gemeentelijnen *working*-->
 
+<h1>zoek doorkomende lijnen in uw gemeente of stad</h1>
+
+<form method="post" action="/doorkomendeLijnen">
+    <input type="number" name="halteId" value="">
+    <input type="submit" value="zoek doorkomende lijn">
 </form>
+
+

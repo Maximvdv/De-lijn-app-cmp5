@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c53a021-8134-436b-bc4c-37922086c824" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/doorkomendeLijnen.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/berekenRoute.ejs" afterPath="$PROJECT_DIR$/views/berekenRoute.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/halteinformatie.ejs" afterPath="$PROJECT_DIR$/views/halteinformatie.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,12 +27,13 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="145" column="38" lean-forward="true" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+            <state relative-caret-position="141">
+              <caret line="160" column="30" lean-forward="false" selection-start-line="160" selection-start-column="30" selection-end-line="160" selection-end-column="30" />
               <folding>
                 <element signature="e#459#1427#0" expanded="false" />
                 <element signature="e#1508#2455#0" expanded="false" />
-                <element signature="e#2542#3391#0" expanded="false" />
+                <element signature="e#2542#3477#0" expanded="false" />
+                <element signature="e#3557#4801#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -50,8 +52,18 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+            <state relative-caret-position="546">
+              <caret line="75" column="53" lean-forward="false" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doorkomendeLijnen.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/doorkomendeLijnen.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -67,21 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="halteinformatie.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
+      <file leaf-file-name="gemeentelijnen.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gemeentelijnen.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
+      <file leaf-file-name="halteinformatie.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -111,10 +123,11 @@
         <option value="$PROJECT_DIR$/views/gemeentenieuws.ejs" />
         <option value="$PROJECT_DIR$/views/verkooppunten.ejs" />
         <option value="$PROJECT_DIR$/views/routeplanner.ejs" />
-        <option value="$PROJECT_DIR$/views/halteinformatie.ejs" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/berekenRoute.ejs" />
+        <option value="$PROJECT_DIR$/views/halteinformatie.ejs" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/views/doorkomendeLijnen.ejs" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -162,6 +175,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,8 +205,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +317,10 @@
       <workItem from="1511949641388" duration="4000" />
       <workItem from="1511951330143" duration="12138000" />
       <workItem from="1512490520892" duration="4717000" />
-      <workItem from="1512553758492" duration="1221000" />
+      <workItem from="1512553758492" duration="2679000" />
+      <workItem from="1512638866631" duration="1082000" />
+      <workItem from="1512724921827" duration="2040000" />
+      <workItem from="1513078517630" duration="2779000" />
     </task>
     <task id="LOCAL-00001" summary="Halte &amp; routeplanner tryout">
       <created>1511960941012</created>
@@ -320,11 +336,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511964750715</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Routeplanner static *working half*">
+      <created>1512555098776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512555098776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21277000" />
+    <option name="totallyTimeSpent" value="28636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,8 +366,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -367,7 +390,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Halte &amp; routeplanner tryout" />
     <MESSAGE value="Routeplanner fix '/'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Routeplanner fix '/'" />
+    <MESSAGE value="Routeplanner static *working half*" />
+    <option name="LAST_COMMIT_MESSAGE" value="Routeplanner static *working half*" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,6 +400,144 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/verkooppunten.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="41" />
+          <folding>
+            <element signature="e#459#1427#0" expanded="false" />
+            <element signature="e#1508#2455#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/berekenRoute.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="17" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/verkooppunten.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="41" />
+          <folding>
+            <element signature="e#459#1427#0" expanded="false" />
+            <element signature="e#1508#2455#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/berekenRoute.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="17" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/verkooppunten.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -383,7 +545,8 @@
           <folding>
             <element signature="e#459#1427#0" expanded="false" />
             <element signature="e#1508#2455#0" expanded="false" />
-            <element signature="e#2542#3391#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -435,7 +598,8 @@
           <folding>
             <element signature="e#459#1427#0" expanded="false" />
             <element signature="e#1508#2455#0" expanded="false" />
-            <element signature="e#2542#3391#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -487,7 +651,8 @@
           <folding>
             <element signature="e#459#1427#0" expanded="false" />
             <element signature="e#1508#2455#0" expanded="false" />
-            <element signature="e#2542#3391#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +688,8 @@
           <folding>
             <element signature="e#459#1427#0" expanded="false" />
             <element signature="e#1508#2455#0" expanded="false" />
-            <element signature="e#2542#3391#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -559,7 +725,8 @@
           <folding>
             <element signature="e#459#1427#0" expanded="false" />
             <element signature="e#1508#2455#0" expanded="false" />
-            <element signature="e#2542#3391#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,16 +756,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/halteinfo.ejs" />
     <entry file="file://$PROJECT_DIR$/views/gemeentenieuws.ejs" />
-    <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
+    <entry file="file://$PROJECT_DIR$/views/test.ejs" />
+    <entry file="file://$PROJECT_DIR$/views/routeplanner.ejs" />
+    <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/test.ejs" />
-    <entry file="file://$PROJECT_DIR$/views/routeplanner.ejs" />
     <entry file="file://$PROJECT_DIR$/views/verkooppunten.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -607,18 +774,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/halteinformatie.ejs">
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="546">
+          <caret line="75" column="53" lean-forward="false" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/views/gemeentelijnen.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -631,14 +798,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/doorkomendeLijnen.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="145" column="38" lean-forward="true" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+        <state relative-caret-position="141">
+          <caret line="160" column="30" lean-forward="false" selection-start-line="160" selection-start-column="30" selection-end-line="160" selection-end-column="30" />
           <folding>
             <element signature="e#459#1427#0" expanded="false" />
             <element signature="e#1508#2455#0" expanded="false" />
-            <element signature="e#2542#3391#0" expanded="false" />
+            <element signature="e#2542#3477#0" expanded="false" />
+            <element signature="e#3557#4801#0" expanded="false" />
           </folding>
         </state>
       </provider>

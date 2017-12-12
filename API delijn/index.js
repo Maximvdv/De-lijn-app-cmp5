@@ -110,7 +110,9 @@ app.post('/halteinformatie', function (req, res) {
             for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.entiteitNummer} </h2>
+            <h2> ${a.bestemming} </h2>
+            <h2> ${a.bestemmingen} </h2>
+            <h2> ${a.beschrijvingGemeente} </h2>
             <hr>
           `;
             }
@@ -126,7 +128,7 @@ app.post('/halteinformatie', function (req, res) {
 app.post('/berekenRoute', function (req, res) {
     // console.log(req.body.verkoopstad);
     var gegevens = ' ';
-    request('https://www.delijn.be/rise-api-core/reisadvies/routes/' + req.body.startpunt + '/' + req.body.eindpunt + '/' + req.body.startx + '/' + req.body.starty + '/' + req.body.endx + '/' + req.body.endy  + '/' + req.body.datum + '/' + req.body.tijdstip + '/' + req.body.vertrekken + '/' + req.body.aankomen + '/' + req.body.bus + '/' + req.body.tram + '/' + req.body.metro + '/' + req.body.trein + '/' + req.body.belbus, function (error, response, body) {
+    request('https://www.delijn.be/rise-api-core/reisadvies/routes/' + req.body.startpunt + '/' + req.body.eindpunt + '/' +/* req.body.startx + '/' + req.body.starty + '/' + req.body.endx + '/' + req.body.endy  + */'/' + req.body.datum + '/' + req.body.tijdstip + '/' + req.body.vertrekken + '/' + req.body.aankomen + '/' + req.body.bus + '/' + req.body.tram + '/' + req.body.metro + '/' + req.body.trein + '/' + req.body.belbus, function (error, response, body) {
         var data = JSON.parse(body);
         console.log(data);
 
@@ -143,15 +145,50 @@ app.post('/berekenRoute', function (req, res) {
             for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.instructie} </h2>
-            <h2> ${a.start} </h2>
-            <h2> ${a.end} </h2>
+            <h2> ${a.reiswegen} </h2>
+            <h2> ${a.afstand} </h2>
+            <h2> ${a.aankomstLocatie} </h2>
             <hr>
           `;
             }
         }
         res.render('berekenRoute', {
             berekenRouteDisplay: `${gegevens}`,
+        });
+    });
+});
+
+//doorkomendeLijnen *working* 
+
+app.post('/doorkomendeLijnen', function (req, res) {
+    // console.log(req.body.verkoopstad);
+    var gegevens = ' ';
+    request('https://www.delijn.be/rise-api-core/haltes/doorkomendelijnen/' + req.body.halteId, function (error, response, body) {
+        var data = JSON.parse(body);
+        console.log(data);
+
+        if (data === null) {
+            gegevens += `
+        <p> Er zijn geen doorkomende lijnen gevonden voor ${req.body.halteId}</p>
+        `;
+        }
+        else {
+
+            gegevens += `
+          <h2> verkooppunten in de gemeente ${req.body.halteId}</h2>
+        `;
+            for (var i = 0; i < data.length; i++) {
+                var a = data[i];
+                gegevens += `
+            <h2> ${a.bestemming} </h2>
+            <h3> Lijn ${a.lijnNummer} komt hier langs </h3>
+            <h5> Richting: ${a.lijnRichting} </h5>
+            <hr>
+          `;
+            }
+        }
+        res.render('doorkomendeLijnen', {
+            doorkomendeLijnenDisplay: `${gegevens}`,
         });
     });
 });
