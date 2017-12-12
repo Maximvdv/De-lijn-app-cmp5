@@ -215,7 +215,7 @@ app.post('/vertrekkendeLijnen', function (req, res) {
             for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.lijnen[{bestemming}]} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
+            <h2> ${a.lijnen[bestemming]} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
             <h3> Lijn ${a.lijnNummer} komt hier langs </h3>
             <h5> Richting: ${a.lijnRichting} </h5>
             <hr>
@@ -227,6 +227,8 @@ app.post('/vertrekkendeLijnen', function (req, res) {
         });
     });
 });
+
+//google maps request
 
 
 
