@@ -2,4 +2,6 @@
     width: 50%;
     height: 50%;
     margin: 0 auto;
+    border: 5px solid orange;
+    border-radius: 2%;
 }

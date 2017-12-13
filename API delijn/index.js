@@ -243,22 +243,26 @@ app.post('/zoekenHaltes', function (req, res) {
 
         if (data === null) {
             gegevens += `
-        <p> Er zijn geen doorkomende lijnen gevonden voor ${req.body.zoekHalte}</p>
+        <p> Er zijn geen haltes gevonden voor ${req.body.zoekHalte}</p>
         `;
         }
         else {
-
             gegevens += `
-          <h2> verkooppunten in de gemeente ${req.body.zoekHalte}</h2>
+          <h2> haltes in de stad ${req.body.zoekHalte}</h2>
         `;
-            for (var i = 0; i < data.length; i++) {
-                var a = data[i];
-                gegevens += `
-            <h2> ${a.haltes[bestemmingen]} </h2>
-            <hr>
-          `;
-            }
+            const { haltes } = data
+            haltes.forEach( halte => {
+                const { lijnen } = halte
+                lijnen.forEach(lijn => {
+                    console.log(haltes);
+                    gegevens += `
+                  <div><p>${lijn.omschrijving} | ${lijn.lijnNummer} </p></div>
+                  `
+                })
+            })
+
         }
+
         res.render('zoekenHaltes', {
             zoekenHaltesDisplay: `${gegevens}`,
         });
