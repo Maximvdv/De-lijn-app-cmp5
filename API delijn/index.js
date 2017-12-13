@@ -197,7 +197,7 @@ app.post('/doorkomendeLijnen', function (req, res) {
     });
 });
 
-//vertrekkendeLijnen
+//vertrekkendeLijnen *not working*
 
 app.post('/vertrekkendeLijnen', function (req, res) {
     // console.log(req.body.verkoopstad);
@@ -228,6 +228,39 @@ app.post('/vertrekkendeLijnen', function (req, res) {
         }
         res.render('vertrekkendeLijnen', {
             vertrekkendeLijnenDisplay: `${gegevens}`,
+        });
+    });
+});
+
+//zoekenHaltes *not working*
+
+app.post('/zoekenHaltes', function (req, res) {
+    // console.log(req.body.verkoopstad);
+    var gegevens = ' ';
+    request('https://www.delijn.be/rise-api-search/search/haltes/' + req.body.zoekHalte + '/' + 1, function (error, response, body) {
+        var data = JSON.parse(body);
+        console.log(data);
+
+        if (data === null) {
+            gegevens += `
+        <p> Er zijn geen doorkomende lijnen gevonden voor ${req.body.zoekHalte}</p>
+        `;
+        }
+        else {
+
+            gegevens += `
+          <h2> verkooppunten in de gemeente ${req.body.zoekHalte}</h2>
+        `;
+            for (var i = 0; i < data.length; i++) {
+                var a = data[i];
+                gegevens += `
+            <h2> ${a.haltes[bestemmingen]} </h2>
+            <hr>
+          `;
+            }
+        }
+        res.render('zoekenHaltes', {
+            zoekenHaltesDisplay: `${gegevens}`,
         });
     });
 });
