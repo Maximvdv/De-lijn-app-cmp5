@@ -184,7 +184,7 @@ app.post('/doorkomendeLijnen', function (req, res) {
             for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.bestemming} </h2>
+            <h2> Eindbestemming: ${a.bestemming} </h2>
             <h3> Lijn ${a.lijnNummer} komt hier langs </h3>
             <h5> Richting: ${a.lijnRichting} </h5>
             <hr>
@@ -219,9 +219,10 @@ app.post('/vertrekkendeLijnen', function (req, res) {
             for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.lijnen[bestemming]} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
-            <h3> Lijn ${a.lijnNummer} komt hier langs </h3>
+            <h2> ${a.lijnNummer} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
+            <h3> Lijntype: ${a.lijnType} </h3>
             <h5> Richting: ${a.lijnRichting} </h5>
+            <h5> Vertrekt om: ${a.vertrekTijd} </h5>
             <hr>
           `;
             }
@@ -232,7 +233,7 @@ app.post('/vertrekkendeLijnen', function (req, res) {
     });
 });
 
-//zoekenHaltes *not working*
+//zoekenHaltes *working*
 
 app.post('/zoekenHaltes', function (req, res) {
     // console.log(req.body.verkoopstad);
@@ -256,7 +257,7 @@ app.post('/zoekenHaltes', function (req, res) {
                 lijnen.forEach(lijn => {
                     console.log(haltes);
                     gegevens += `
-                  <div><p>${lijn.omschrijving} | ${lijn.lijnNummer} </p></div>
+                  <div><p>${lijn.lijnNummer} | ${lijn.omschrijving}</p></div>
                   `
                 })
             })
