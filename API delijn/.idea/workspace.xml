@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c53a021-8134-436b-bc4c-37922086c824" name="Default" comment="zoekHaltes fix (object-based)">
+    <list default="true" id="1c53a021-8134-436b-bc4c-37922086c824" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
@@ -24,14 +24,24 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="224" column="52" lean-forward="true" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
+            <state relative-caret-position="340">
+              <caret line="220" column="22" lean-forward="false" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
               <folding>
                 <element signature="e#510#1478#0" expanded="false" />
                 <element signature="e#1559#2506#0" expanded="false" />
                 <element signature="e#2593#3528#0" expanded="false" />
                 <element signature="e#3608#4852#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,7 +69,7 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1379">
+            <state relative-caret-position="104">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#2960#4550#0#HTML" expanded="false" />
@@ -87,6 +97,7 @@
       <find>verkoop</find>
       <find>a.</find>
       <find>naam</find>
+      <find>lijnen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -361,7 +372,7 @@
       <workItem from="1513156833954" duration="1628000" />
       <workItem from="1513159596461" duration="9390000" />
       <workItem from="1513188653237" duration="2964000" />
-      <workItem from="1513336931651" duration="4507000" />
+      <workItem from="1513336931651" duration="6391000" />
     </task>
     <task id="LOCAL-00001" summary="Halte &amp; routeplanner tryout">
       <created>1511960941012</created>
@@ -461,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513192340915</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="zoenHaltes order fix + vertrekkendeLijnen try">
+      <created>1513341681273</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1513341681273</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57621000" />
+    <option name="totallyTimeSpent" value="59505000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,7 +538,8 @@
     <MESSAGE value="Maps CSS adjust + doorkomendeLijnen API url adjust" />
     <MESSAGE value="test zoekenHaltes" />
     <MESSAGE value="zoekHaltes fix (object-based)" />
-    <option name="LAST_COMMIT_MESSAGE" value="zoekHaltes fix (object-based)" />
+    <MESSAGE value="zoenHaltes order fix + vertrekkendeLijnen try" />
+    <option name="LAST_COMMIT_MESSAGE" value="zoenHaltes order fix + vertrekkendeLijnen try" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -864,14 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/verkooppunten.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -904,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1379">
+        <state relative-caret-position="104">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#2960#4550#0#HTML" expanded="false" />
@@ -912,10 +923,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="224" column="52" lean-forward="true" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
+        <state relative-caret-position="340">
+          <caret line="220" column="22" lean-forward="false" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
           <folding>
             <element signature="e#510#1478#0" expanded="false" />
             <element signature="e#1559#2506#0" expanded="false" />

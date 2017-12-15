@@ -216,22 +216,37 @@ app.post('/vertrekkendeLijnen', function (req, res) {
             gegevens += `
           <h2> Vertrekkende lijnen voor halte ${req.body.halteId}</h2>
         `;
-            for (var i = 0; i < data.length; i++) {
+
+            const { vertrekken } = data
+            vertrekken.forEach( vertrekPunt => {
+                const { lijnen } = vertrekPunt
+                lijnen.forEach(lijn => {
+                    console.log(vertrekken);
+                    gegevens += `
+                  <div><p>${lijn.lijnNummer} | ${lijn.vertrekTijd}</p></div>
+                  `
+                })
+            })
+
+        }
+
+            /*for (var i = 0; i < data.length; i++) {
                 var a = data[i];
                 gegevens += `
-            <h2> ${a.lijnNummer} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
-            <h3> Lijntype: ${a.lijnType} </h3>
-            <h5> Richting: ${a.lijnRichting} </h5>
-            <h5> Vertrekt om: ${a.vertrekTijd} </h5>
+            <h2> ${a.lijnen.lijnNummer} </h2>  <!--Hoe kan ik de nested array opvragen hier?-->
+            <h3> Lijntype: ${lijnType} </h3>
+            <h5> Richting: ${a[{lijnRichting}]} </h5>
+            <h5> Vertrekt om: ${a[lijnen.vertrekTijd]} </h5>
             <hr>
           `;
-            }
-        }
+            }*/
+        })
+
         res.render('vertrekkendeLijnen', {
             vertrekkendeLijnenDisplay: `${gegevens}`,
         });
     });
-});
+
 
 //zoekenHaltes *working*
 
