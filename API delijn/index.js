@@ -46,7 +46,7 @@ app.post('/verkooppunten', function (req, res) {
                 gegevens += `
             <h2> ${a.gemeente} </h2>
             <h3> ${a.naam} verkoopt tickets </h3>
-            <h5> Richting: ${a.adresString} </h5>
+            <h5> Adres: ${a.adresString} </h5>
             <hr>
           `;
             }
