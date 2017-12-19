@@ -1,0 +1,37 @@
+<% include header %>
+<main>
+
+  <div class="wrapper">
+    <a href="/opties"><img src="/img/delijn-logo.png" class="delijn-logo"></a>
+    <img src="/img/routeplannerbackground.png" class="enter">
+
+    <form class="halte-form">
+
+      <div class="halte-grid">
+
+        <img src="/img/map-pin.png" class="vertrekpunt-icon">
+        <div class="route-item vertrekpunt">
+            <label for="vetrekpunt"></label>
+            <input type="text" name="vertrekpunt" id="vertrekpunt" placeholder="Vertrekpunt" required />
+        </div>
+
+
+        <img src="/img/bestemming-icon.png" class="bestemming-icon">
+        <div class="route-item bestemming">
+            <label for="bestemming"></label>
+            <input name="bestemming"  type="text" id="bestemming" placeholder="Bestemming" required />
+        </div>
+
+        <div class="route-item berekenroute">
+              <a href="/snelsteroute"><input name="snelsteroute" type="button" value="Bereken snelste route" id="snelsteroute" action="#" method="POST"></a>
+        </div>
+
+      </div>
+
+     </form>
+
+  </div>
+
+  </main>
+
+<% include footer %>

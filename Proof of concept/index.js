@@ -8,8 +8,6 @@ app.use(express.static(__dirname + '/public'));
 
 var bodyParser = require('body-parser');
 
-
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -20,6 +18,44 @@ app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
     res.render('index', {});
 });
+
+app.get("/registreer", function(req, res) {
+    res.render("registreer");
+});
+
+app.get("/aanmelden", function(req, res) {
+    res.render("aanmelden");
+});
+
+app.get("/opties", function(req, res) {
+    res.render("opties");
+});
+
+app.get("/routeplanner", function(req, res) {
+    res.render("routeplanner");
+});
+
+app.get("/haltes", function(req, res) {
+    res.render("haltes");
+});
+
+app.get("/lijnen", function(req, res) {
+    res.render("lijnen");
+});
+
+app.get("/verkooppunten", function(req, res) {
+    res.render("verkooppunten");
+});
+
+app.get("/berekenhalte", function (req, res) {
+    res.render("berekenhalte");
+});
+
+app.get("/zoekverkooppunt", function (req, res) {
+    res.render("zoekverkooppunt");
+});
+
+
 
 
 // verkooppunten *working*
