@@ -1,0 +1,37 @@
+<% include header %>
+<main>
+
+
+
+   <!-- <h1>zoek haltes</h1>
+    <form method="post" action="/zoekenHaltes">
+        Plaats: <input type="text" name="zoekHalte" value=""><br>
+        <input type="submit" value="zoek haltes">
+    </form>
+-->
+
+
+  <div class="wrapperhalte">
+    <a href="/opties"><img src="/img/delijn-logo.png" class="delijn-logo"></a>
+    <img src="/img/haltes-bg.png" class="enter">
+
+    <form class="halte-form" method="post" action="/berekenhalte">
+
+      <div class="halte-grid">
+
+        <img src="/img/zoek-icon.png" class="zoek-icon">
+        <div class="halte-item naam">
+            <label for="haltes"></label>
+            <input type="text" name="zoekHalte" placeholder="Naam halte" required />
+        </div>
+
+        <div class="halte-item zoeken">
+              <input name="haltezoeken" type="submit" value="Halte zoeken">
+        </div>
+
+      </div>
+
+     </form>
+
+  </div>
+</main>

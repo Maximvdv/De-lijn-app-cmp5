@@ -1,0 +1,32 @@
+<% include header %>
+<main>
+
+    <!--<form method="post" action="/verkooppunten">
+        <input type="text" name="verkoopstad" value="">
+        <input type="submit" value="zoek verkooppunt">
+    </form>-->
+
+
+  <div class="wrapper">
+    <a href="/opties"><img src="/img/delijn-logo.png" class="delijn-logo"></a>
+    <img src="/img/verkooppunten-bg.png" class="enter">
+
+    <form class="verkooppunt-form" method="post" action="/zoekverkooppunt">
+
+      <div class="verkooppunt-grid">
+
+        <img src="/img/zoek-icon.png" class="zoek-icon">
+        <div class="verkooppunt-item naam">
+            <label for="verkooppunten"></label>
+            <input type="text" name="verkoopstad" placeholder="Vul stad in" required />
+        </div>
+
+        <div class="verkooppunt-item zoeken">
+             <input name="verkooppuntzoeken" type="submit" value="Verkooppunt zoeken">
+        </div>
+
+      </div>
+
+     </form>
+  </div>
+</main>
