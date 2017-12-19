@@ -1,13 +1,25 @@
-<% include header%>
+<% include header %>
+<main>
 
-<h1>zoek verkooppunten in uw gemeente van De Lijn</h1>
+  <div class="wrapper">
+    <a href="/opties"><img src="/img/delijn-logo.png" class="delijn-logo"></a>
+    <img src="/img/verkooppunten-bg.png" class="enter">
 
-<form method="post" action="/verkooppunten">
-  <input type="text" name="verkoopstad" value="">
+    <form class="verkooppunt-form">
 
-  <input type="submit" value="zoek verkooppunt">
-</form>
+      <div class="verkooppunt-grid">
 
-<%- verkoopDisplay %>
+        <img src="/img/zoek-icon.png" class="zoek-icon">
+        <div class="verkooppunt-item naam">
+            <label for="verkooppunten"></label>
+            <input type="text" name="verkooppunten" placeholder="Verkooppunt" required />
+        </div>
 
-<% include footer%>
+        <div class="verkooppunt-item zoeken">
+              <a href="/zoekverkooppunt"><input name="verkooppuntzoeken" type="button" value="Verkooppunt zoeken" action="#" method="POST"></a>
+        </div>
+
+      </div>
+
+     </form>
+  </div>

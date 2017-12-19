@@ -22,6 +22,36 @@ app.get('/', function (req, res) {
 });
 
 
+app.get("/registreer", function(req, res) {
+    res.render("registreer");
+});
+
+app.get("/aanmelden", function(req, res) {
+    res.render("aanmelden");
+});
+
+app.get("/opties", function(req, res) {
+    res.render("opties");
+});
+
+app.get("/routeplanner", function(req, res) {
+    res.render("routeplanner");
+});
+
+app.get("/haltes", function(req, res) {
+    res.render("haltes");
+});
+
+app.get("/lijnen", function(req, res) {
+    res.render("lijnen");
+});
+
+app.get("/verkooppunten", function(req, res) {
+    res.render("verkooppunten");
+});
+
+
+
 // verkooppunten *working*
 
 app.post('/verkooppunten', function (req, res) {
