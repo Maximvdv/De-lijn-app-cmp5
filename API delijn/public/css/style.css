@@ -1,13 +1,408 @@
-#map {
-    height: 100%;
-    margin-top: 10px;
-}
-/* Optional: Makes the sample page fill the window. */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
+
+/* This design by Kristof Michiels - Mobile first meaning other screens are cathered for in separate media queries */
+html { -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */ }
+
+body { width: 100%;
+    font-size: 90%;
+    font-family: "helvetica";
+    color: #1B1B1B;
+
+
+}
+
+/*main
+-------------------------------*/
+main{
+
+
+
+}
+
+
+/* inlogscherm
+-------------------------------*/
+
+.enter {
+    height: 100vh;
+    position: absolute;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #E08113;
+}
+
+.inlogscherm {
+    background-color: white;
+    width: 60%;
+    height: 40vh;
+    padding: 25px;
+    position:absolute;
+    margin-top: 30%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.regi-form, .aanm-form, .log {
+    width: 60%;
+    height: 40vh;
+    padding: 25px;
+    position: absolute;
+    margin-top: 30%;
+    top: 51%;
+    left: 51%;
+    transform: translate(-45%, -50%);
+}
+
+.log {
+    margin-top: 36%;
+}
+
+.forman{
+    margin-top: 123px;;
+}
+
+.slotic {
+    width: 13vw;
+    position: absolute;
+    margin: 14.6% 0 0 -11%;
+}
+
+.accicoon {
+    width: 13vw;
+    position: absolute;
+    margin: -6.1% 0 0 -11%;
+}
+
+.mailicoon {
+    width: 13vw;
+    position: absolute;
+    margin: 35% 0 0 -11%;
+}
+
+
+/*labels
+----------------------------------*/
+
+#regi {
+    color: white;
+    background-color: #CD5700;
+    border-radius: 4px;
+    font-size: 1.7em;
+    width: 100%;
+    margin: 19% 0 0 -9%;
+}
+
+#aanminlog{
+    color: white;
+    background-color: #CD5700;
+    border-radius: 4px;
+    font-size: 1.7em;
+    width: 100%;
+    margin: 10% 0 0 -17px;
+}
+
+#aanm {
+    color: white;
+    background-color: #CD5700;
+    border-radius: 4px;
+    font-size: 1.7em;
+    width: 100%;
+    margin: 14% 0 0 -17px;
+}
+
+#aanmel{
+    color: white;
+    background-color: #CD5700;
+    border-radius: 4px;
+    font-size: 1.7em;
+    width: 100%;
+    margin: 25% 0 0 -17px;
+}
+
+#gebruiker {
+    font-size: 1.2em;
+    border-radius: 4px;
+    background-color: #EE9D00;
+    width: 84%;
+    height: 6vh;
+    border: 1px solid white;
+    margin: -8% 0 0 8px;
+}
+
+#w8w {
+    font-size: 1.2em;
+    background-color: #EE9D00;
+    width: 84%;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 6vh;
+    margin: 6% 0 0 8px;
+}
+
+#mail {
+    font-size: 1.2em;
+    background-color: #EE9D00;
+    width:84%;
+    height: 6vh;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 6% 0 0 8px;
+}
+
+
+input::placeholder {
+    text-align: center;
+    color: white;
+}
+input{
+    text-align: center;
+
+}
+
+
+
+#vnaam{
+
+}
+
+
+label[for="fnaam"]{}
+#vnaam{
+    height: 34px;
+    width: 70%;
+    margin-left: 14%;
+    font-size: 20px;
+    margin-bottom: 10px;}
+
+
+#anaam{
+
+}
+
+label[for="fnaam"]{}
+#fnaam{
+    height: 34px;
+    width: 70%;
+    margin-left: 14%;
+    font-size: 20px;
+    margin-bottom: 10px;}
+
+
+
+/*opmaak tekst
+---------------------------------*/
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+h2{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin:24px auto 0;
+    text-align: center;
+    padding-top: 14px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    margin: 37px 0 0 91px;
+    width: 42%;
+    text-align: center;
+    padding-top: 14px;
+}
+
+/*bio-scherm
+-----------------------------------------*/
+
+.optie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    height: 320px;
+    width: 270px;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.optie-grid a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.routeplanner {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(53, 73, 94);
+    margin: 10px 5px 5px 10px;
+}
+
+.haltes {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(114, 160, 157);
+    margin: 10px 10px 5px 5px;
+}
+
+.lijnen {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(237, 173, 59);
+    margin: 5px 5px 10px 10px;
+}
+
+.verkooppunten {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(187, 60, 44);
+    margin: 5px 10px 10px 5px;
+}
+
+.optie-item img {
+    width: 100%;
+}
+
+.optie-item {
+    position: relative;
+    text-align: center;
+    height: 90%;
+}
+
+.optie-item p {
+    position: absolute;
+    bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*logo van de lijn
+------------------------------------*/
+
+.delijn-logo {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+/*routeplanner scherm
+-------------------------------------*/
+
+.route-grid, .halte-grid, .lijn-grid, .verkooppunt-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 50px 50px;
+    grid-row-gap: 15px;
+    margin: auto;
+    height: 260px;
+    width: 220px;
+    z-index: 5;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vertrekpunt, .naam {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+.vertrekpunt-icon, .zoek-icon {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(205, 87, 0);
+    width: 100%;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.zoek-icon{
+    padding: 1em;
+    width: 43%;
+}
+
+.bestemming {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+.bestemming-icon {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(205, 87, 0);
+    width: 100%;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.berekenroute {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+}
+
+.zoeken{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+.route-form input, .halte-form input, .lijn-form input, .verkooppunt-form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(238, 157, 0);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.route-form input[type="button"], .halte-form input[type="button"], .lijn-form input[type="button"], .verkooppunt-form input[type="button"] {
+    background-color: rgb(205, 87, 0);
+}
+
+@media only screen and (min-width: 1200px) { body { width: 95%; } }
+
+
+
+/*Map styling*/
+
+#map {
+    height: 100%;
+    margin-top: 10px;
+}
+
 .controls {
     margin-top: 10px;
     border: 1px solid transparent;
@@ -28,7 +423,7 @@ html, body {
     margin-left: 12px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 160px;
 }
 
 #origin-input:focus,
@@ -47,4 +442,17 @@ html, body {
     font-family: Roboto;
     font-size: 13px;
     font-weight: 300;
+}
+
+.pac-container:after {
+    /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+
+    background-image: none !important;
+    height: 0px;
+}
+
+.map-responsive{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
