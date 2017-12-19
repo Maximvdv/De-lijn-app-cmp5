@@ -8,8 +8,6 @@ app.use(express.static(__dirname + '/public'));
 
 var bodyParser = require('body-parser');
 
-
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -20,7 +18,6 @@ app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
     res.render('index', {});
 });
-
 
 app.get("/registreer", function(req, res) {
     res.render("registreer");
@@ -49,6 +46,15 @@ app.get("/lijnen", function(req, res) {
 app.get("/verkooppunten", function(req, res) {
     res.render("verkooppunten");
 });
+
+app.get("/berekenhalte", function (req, res) {
+    res.render("berekenhalte");
+});
+
+app.get("/zoekverkooppunt", function (req, res) {
+    res.render("zoekverkooppunt");
+});
+
 
 
 
